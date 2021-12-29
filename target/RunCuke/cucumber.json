@@ -1,0 +1,171 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User is on amazon home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1032193700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the amazon homepage",
+            "match": {
+              "location": "LaptopSteps.userIsOnTheAmazonHomepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19618347500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUP()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User should be able to purchase mobile phone successfully",
+        "description": "",
+        "id": "mobile-test;user-should-be-able-to-purchase-mobile-phone-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 1523162000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1272894600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User search for \"Mobile Phone\" laptop in the search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile Phone",
+                  "offset": 17
+                }
+              ],
+              "location": "LaptopSteps.userSearchForLaptopInTheSearchBar(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4653764000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clicks on the search button",
+            "match": {
+              "location": "LaptopSteps.clicksOnTheSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55855228500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "finds the selection from the pages \"Nokia XR20 5G | Android 11 | Unlocked Smartphone | Dual SIM | US Version | 6/128GB | 6.67-Inch Screen | 48MP Dual Camera | Polar Night\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nokia XR20 5G | Android 11 | Unlocked Smartphone | Dual SIM | US Version | 6/128GB | 6.67-Inch Screen | 48MP Dual Camera | Polar Night",
+                  "offset": 36
+                }
+              ],
+              "location": "LaptopSteps.findsTheSelectionFromThePages(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4149033000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selects the quantity \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 22
+                }
+              ],
+              "location": "LaptopSteps.selectsTheQuantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2795970000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clicks on add to cart button",
+            "match": {
+              "location": "LaptopSteps.clicksOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5775682300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Verifies the add to cart message \"Added to Cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Added to Cart",
+                  "offset": 34
+                }
+              ],
+              "location": "LaptopSteps.verifiesTheAddToCartMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Sanity"
+          },
+          {
+            "line": 7,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Mobile Test",
+    "description": "",
+    "id": "mobile-test",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/featurefile/mobilephone.feature"
+  }
+]
